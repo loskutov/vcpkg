@@ -8,14 +8,10 @@ endif()
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO actor-framework/actor-framework
-    REF 0.15.7
-    SHA512 ff0fa205ad71677b84fa09a2e6ce6bb6d1bc9b790bbbc3ac51505467402ff61a218528004212efa2063c798cc512972d318a2c9423067ee51cef719de2b6b186
+    REF 0.16.0
+    SHA512 602cc73471494eb574caeda4aed649d42c24c4f6a9f4862761db56c1990afa5525bcf34b9abb61b9dad261781b54a6d8e276f6358ed3283c9b78121465e60102
     HEAD_REF master
-)
-
-vcpkg_apply_patches(
-    SOURCE_PATH ${SOURCE_PATH}
-    PATCHES ${CMAKE_CURRENT_LIST_DIR}/openssl-version-override.patch
+    PATCHES openssl-version-override.patch
 )
 
 vcpkg_configure_cmake(

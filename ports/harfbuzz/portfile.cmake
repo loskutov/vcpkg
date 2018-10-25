@@ -3,8 +3,8 @@ include(vcpkg_common_functions)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO harfbuzz/harfbuzz
-    REF 1.8.4
-    SHA512 92742b754713d1df8975d4d8467de04765784d7fd566b7e07e7e7a261b0338e997a5fc11fa4fe282d6d5540d242db40c993812fbc4a881becd95fd3aae598c80
+    REF 2.0.2
+    SHA512 473f3a2b84c73055d20e84c5097c749ff82a25d28750d7e95a9b58952d709acfe8d3c2513308cf492c4ac1372453967c0986007e993f0fddcaaae700ad137527
     HEAD_REF master
     PATCHES
         0001-fix-uwp-build.patch
